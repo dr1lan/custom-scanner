@@ -1,0 +1,1362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Found backup file {}"
+msgstr "Найдены резервные копии {}"
+
+#, python-brace-format
+msgid "Backup file {0} found for {1}"
+msgstr "Найден резервный файл {0} для {1}"
+
+msgid "Credentials found for URL {} : {} / {}"
+msgstr "Найдены учетные данные для URL {}: {} / {}"
+
+#, python-brace-format
+msgid "HttpOnly flag is not set in the cookie : {0}"
+msgstr "В файле cookie не установлен флаг HttpOnly: {0}"
+
+#, python-brace-format
+msgid "Secure flag is not set in the cookie : {0}"
+msgstr "В файле cookie не установлен флаг Secure: {0}"
+
+msgid "Checking cookie : {}"
+msgstr "Проверка файла cookie: {}"
+
+msgid "CRLF Injection"
+msgstr "CRLF инъекция"
+
+msgid "Error: The server did not understand this request"
+msgstr "Ошибка: сервер не понял этот запрос"
+
+#, python-brace-format
+msgid "{0} via injection in the parameter {1}"
+msgstr "{0} через инъекцию в параметре {1}"
+
+msgid "CSP is not set"
+msgstr "CSP не установлен"
+
+#, python-brace-format
+msgid "CSP attribute \"{0}\" is missing"
+msgstr "Атрибут CSP \"{0}\" отсутствует"
+
+#, python-brace-format
+msgid "CSP \"{0}\" value is not safe"
+msgstr "Значение CSP \"{0}\" небезопасно"
+
+msgid "Lack of anti CSRF token"
+msgstr "Отсутствие анти CSRF токена"
+
+msgid "CSRF token '{}' is not properly checked in backend"
+msgstr "Токен CSRF '{}' неправильно проверен на бэкэнде"
+
+msgid "CSRF token '{}' might be easy to predict"
+msgstr "Токен CSRF '{}' легко угадать"
+
+#, python-brace-format
+msgid "{0} {1} detected"
+msgstr "Обнаружено {0} {1}"
+
+msgid "No Drupal Detected"
+msgstr "Drupal не обнаружен"
+
+msgid "Warning eval()"
+msgstr "Предупреждение eval()"
+
+msgid "Command execution"
+msgstr "Выполнение команды"
+
+msgid "PHP evaluation"
+msgstr "Оценка PHP"
+
+msgid "Warning exec"
+msgstr "Предупреждение exec"
+
+msgid "preg_replace injection"
+msgstr "preg_replace инъекция"
+
+msgid "Warning usort()"
+msgstr "Предупреждение usort()"
+
+msgid "Warning assert"
+msgstr "Предупреждение assert"
+
+msgid "Evaluation warning"
+msgstr "Оценка предупреждения"
+
+msgid "Blind command execution"
+msgstr "Слепое выполнение команд"
+
+#, python-brace-format
+msgid "Possible {0} vulnerability"
+msgstr "Возможная {0} уязвимость"
+
+msgid "Constraints: {}"
+msgstr "Ограничения: {}"
+
+#, python-brace-format
+msgid "{0} bypassable weak restriction"
+msgstr "{0} можно обойти слабое ограничение"
+
+#, python-brace-format
+msgid "Weak restriction bypass vulnerability: {0}"
+msgstr "Уязвимость обхода слабых ограничений: {0}"
+
+#, python-brace-format
+msgid "HTTP status code changed from {0} to {1}"
+msgstr "Код статуса HTTP изменен с {0} на {1}"
+
+msgid "Source code:"
+msgstr "Исходный код:"
+
+msgid "Strict-Transport-Security is not set"
+msgstr "Strict-Transport-Security не установлен"
+
+msgid "X-Content-Type-Options is not set"
+msgstr "X-Content-Type-Options не установлен"
+
+msgid "X-XSS-Protection is not set"
+msgstr "X-XSS-Protection не установлен"
+
+msgid "X-Frame-Options is not set"
+msgstr "X-Frame-Options не установлен"
+
+msgid "Checking X-Frame-Options :"
+msgstr "Проверка X-Frame-Options:"
+
+msgid "Checking X-XSS-Protection :"
+msgstr "Проверка X-XSS-Protection :"
+
+msgid "Checking X-Content-Type-Options :"
+msgstr "Проверка X-Content-Type-Options :"
+
+msgid "Checking Strict-Transport-Security :"
+msgstr "Проверка Strict-Transport-Security :"
+
+msgid "Interesting methods allowed on {}: {}"
+msgstr "Интересные методы разрешены на {}: {}"
+
+msgid "Error downloading nikto database."
+msgstr "Ошибка при загрузке базы данных nikto."
+
+msgid "Problem with local nikto database."
+msgstr "Проблема с локальной базой данных nikto."
+
+msgid "Downloading from the web..."
+msgstr "Загрузка из Интернета..."
+
+msgid "References:"
+msgstr "Ссылки:"
+
+msgid "Stored XSS vulnerability"
+msgstr "Сохраненная уязвимость XSS"
+
+#, python-brace-format
+msgid "Permanent XSS vulnerability found via injection in the parameter {0}"
+msgstr "Постоянная уязвимость XSS обнаружена путем внедрения в параметр {0}"
+
+#, python-brace-format
+msgid ""
+"Permanent XSS vulnerability found in {0} by injecting the parameter {1} of "
+"{2}"
+msgstr ""
+"Постоянная уязвимость XSS обнаружена в {0} путем внедрения параметра {1} из "
+"{2}"
+
+msgid "Warning: Content-Security-Policy is present!"
+msgstr "Внимание! Присутствует Content-Security-Policy!"
+
+msgid "Open Redirect"
+msgstr "Открытое перенаправление"
+
+#, python-brace-format
+msgid "URL {0} seems vulnerable to Shellshock attack!"
+msgstr "URL {0} кажется уязвимым для атаки Shellshock!"
+
+#, python-brace-format
+msgid "URL {0} seems vulnerable to Shellshock attack"
+msgstr "URL {0} кажется уязвимым для атаки Shellshock"
+
+msgid "SQL Injection"
+msgstr "SQL-инъекция"
+
+msgid ".NET SQL Injection"
+msgstr "Инъекция .NET SQL"
+
+msgid "Spring JDBC Injection"
+msgstr "Spring JDBC инъекция"
+
+msgid "XPath Injection"
+msgstr "XPath инъекция"
+
+msgid "LDAP Injection"
+msgstr "LDAP инъекция"
+
+msgid "SSRF vulnerability"
+msgstr "SSRF уязвимость"
+
+msgid "[*] Asking endpoint URL {} for results, please wait..."
+msgstr "[*] Запрос результатов по URL-адресу {}, подождите..."
+
+msgid "[!] Unable to request endpoint URL '{}'"
+msgstr "[!] Невозможно запросить URL-адрес  '{}'"
+
+#, python-brace-format
+msgid ""
+"{0} via injection in the parameter {1}.\n"
+"The target performed an outgoing HTTP {2} request at {3} with IP {4}.\n"
+"Full request can be seen at {5}"
+msgstr ""
+"{0} путем внедрения в параметр {1}.\n"
+"Цель выполнила исходящий HTTP-запрос {2} в {3} с IP {4}.\n"
+"Полный запрос можно увидеть на {5}"
+
+#, python-brace-format
+msgid "Record {domain} points to {cname}"
+msgstr "Запись {domain} указывает на {cname}"
+
+#, python-brace-format
+msgid "CNAME {domain} to {cname} seems vulnerable to takeover"
+msgstr "CNAME {domain} для {cname} кажется уязвимым для захвата"
+
+msgid "Blind SQL vulnerability"
+msgstr "\"Слепая\" уязвимость SQL"
+
+msgid "Error downloading wapp database."
+msgstr "Ошибка при загрузке базы данных wapp."
+
+msgid "Problem with local wapp database."
+msgstr "Проблема с локальной базой данных wapp."
+
+msgid ""
+"Try using --store-session option, or update apps.json using --update option."
+msgstr ""
+"Попробуйте использовать параметр --store-session или обновите apps.json с "
+"помощью параметра --update."
+
+msgid "No WordPress Detected"
+msgstr "WordPress не обнаружен"
+
+msgid "Enumeration of WordPress Plugins :"
+msgstr "Перечень плагинов WordPress:"
+
+msgid "Enumeration of WordPress Themes :"
+msgstr "Перечень тем WordPress:"
+
+msgid "XSS vulnerability"
+msgstr "XSS уязвимость"
+
+#, python-brace-format
+msgid "XSS vulnerability found via injection in the parameter {0}"
+msgstr "Уязвимость XSS обнаружена путем внедрения в параметр {0}"
+
+msgid "XXE vulnerability"
+msgstr "XXE уязвимость"
+
+#, python-brace-format
+msgid "Out-Of-Band {0} by sending raw XML in request body"
+msgstr "Out-Of-Band {0} путем отправки необработанного XML в теле запроса"
+
+#, python-brace-format
+msgid "Out-Of-Band {0} via injection in the parameter {1}"
+msgstr "Out-Of-Band {0} с помощью инъекции в параметр {1}"
+
+#, python-brace-format
+msgid ""
+"The target sent {0} bytes of data to the endpoint at {1} with IP {2}.\n"
+"Received data can be seen at {3}."
+msgstr ""
+"Целевой объект отправил {0} байтов данных в конечную точку в {1} с IP-"
+"адресом {2}.\n"
+"Полученные данные можно увидеть на странице {3}."
+
+msgid "Backup file"
+msgstr "Резервный файл"
+
+msgid ""
+"It may be possible to find backup files of scripts on the webserver that the "
+"web-admin put here to save a previous version or backup files that are "
+"automatically generated by the software editor used (like for example Emacs)."
+msgstr ""
+"Возможно, удастся найти файлы резервных копий сценариев на веб-сервере, "
+"которые веб-администратор поместил сюда для сохранения предыдущей версии, "
+"или файлы резервных копий, которые автоматически генерируются используемым "
+"программным редактором (например, Emacs)."
+
+msgid ""
+"These copies may reveal interesting information like source code or "
+"credentials."
+msgstr ""
+"Эти копии могут содержать интересную информацию, такую ​​как исходный код или "
+"учетные данные."
+
+msgid ""
+"The webadmin must manually delete the backup files or remove it from the web "
+"root."
+msgstr ""
+"Веб-администратор должен вручную удалить файлы резервных копий или удалить "
+"их из корневого каталога Интернета."
+
+msgid "He should also reconfigure its editor to deactivate automatic backups."
+msgstr ""
+"Ему также следует перенастроить свой редактор, чтобы отключить "
+"автоматическое резервное копирование."
+
+msgid "Weak credentials"
+msgstr "Слабые полномочия"
+
+msgid ""
+"The web application is using either default credentials or weak passwords "
+"that can be found in well-known passwords lists."
+msgstr ""
+"Веб-приложение использует либо учетные данные по умолчанию, либо слабые "
+"пароли, которые можно найти в хорошо известных списках паролей."
+
+msgid ""
+"Do not ship or deploy with any default credentials, particularly for admin "
+"users."
+msgstr ""
+"Не отправляйте и не развертывайте учетные данные по умолчанию, особенно для "
+"пользователей-администраторов."
+
+msgid ""
+"Implement weak-password checks, such as testing new or changed passwords "
+"against a list of the top 10000 worst passwords."
+msgstr ""
+"Внедрите проверку ненадежных паролей, например проверку новых или измененных "
+"паролей по списку из 10000 самых плохих паролей."
+
+msgid ""
+"The term CRLF refers to Carriage Return (ASCII 13, \\r) Line Feed (ASCII 10, "
+"\\n)."
+msgstr ""
+"Термин CRLF относится к переводу строки (ASCII 13, \\ r) возврата каретки "
+"(ASCII 13, \\ r) (ASCII 10, \\ n)."
+
+msgid ""
+"A CRLF Injection attack occurs when a user manages to submit a CRLF into an "
+"application."
+msgstr ""
+"Атака CRLF Injection происходит, когда пользователю удается отправить CRLF в "
+"приложение."
+
+msgid "This is most commonly done by modifying an HTTP parameter or URL."
+msgstr "Чаще всего это делается путем изменения параметра HTTP или URL-адреса."
+
+msgid ""
+"Check the submitted parameters and do not allow CRLF to be injected when it "
+"is not expected."
+msgstr ""
+"Проверьте отправленные параметры и не позволяйте вводить CRLF, когда это не "
+"ожидается."
+
+msgid "Content Security Policy Configuration"
+msgstr "Content Security Policy Configuration"
+
+msgid "CSP Configuration"
+msgstr "Конфигурация CSP"
+
+msgid ""
+"Content Security Policy (CSP) is an added layer of security that helps to "
+"detect and mitigate certain types of attacks, including Cross Site Scripting "
+"(XSS) and data injection attacks."
+msgstr ""
+"Политика безопасности контента (CSP) - это дополнительный уровень "
+"безопасности, который помогает обнаруживать и смягчать определенные типы "
+"атак, включая атаки с использованием межсайтовых сценариев (XSS) и инъекции "
+"данных."
+
+msgid ""
+"Configuring Content Security Policy involves adding the Content-Security-"
+"Policy HTTP header to a web page and giving it values to control what "
+"resources the user agent is allowed to load for that page."
+msgstr ""
+"Настройка политики безопасности контента включает добавление HTTP-заголовка "
+"Content-Security-Policy на веб-страницу и присвоение ему значений для "
+"управления тем, какие ресурсы пользовательскому агенту разрешено загружать "
+"для этой страницы."
+
+msgid "Cross Site Request Forgery"
+msgstr "Подделка межсайтовых запросов"
+
+msgid "CSRF"
+msgstr "CSRF"
+
+msgid ""
+"Cross-Site Request Forgery (CSRF) is an attack that forces an end user to "
+"execute unwanted actions on a web application in which they're currently "
+"authenticated."
+msgstr ""
+"Подделка межсайтовых запросов (CSRF) - это атака, вынуждающая конечного "
+"пользователя выполнять нежелательные действия в веб-приложении, в котором он "
+"в настоящее время аутентифицирован."
+
+msgid "Check if your framework has built-in CSRF protection and use it."
+msgstr ""
+"Проверьте, есть ли в вашем фреймворке встроенная защита от CSRF, и "
+"используйте ее."
+
+msgid ""
+"If framework does not have built-in CSRF protection add CSRF tokens to all "
+"state changing requests (requests that cause actions on the site) and "
+"validate them on backend."
+msgstr ""
+"Если фреймворк не имеет встроенной защиты CSRF, добавьте токены CSRF ко всем "
+"запросам на изменение состояния (запросы, которые вызывают действия на "
+"сайте) и подтвердите их на бэкэнде."
+
+msgid "Potentially dangerous file"
+msgstr "Потенциально опасный файл"
+
+msgid "A file with potential vulnerabilities has been found on the website."
+msgstr "На сайте обнаружен файл с потенциальными уязвимостями."
+
+msgid ""
+"Make sure the script is up-to-date and restrict access to it if possible."
+msgstr ""
+"Убедитесь, что скрипт актуален, и, если возможно, ограничьте к нему доступ."
+
+msgid "This attack consists in executing system commands on the server."
+msgstr "Эта атака заключается в выполнении системных команд на сервере."
+
+msgid "The attacker tries to inject this commands in the request parameters."
+msgstr "Атакующий пытается ввести эти команды в параметры запроса."
+
+msgid "Prefer working without user input when using file system calls."
+msgstr ""
+"При использовании вызовов файловой системы предпочитайте работу без ввода "
+"данных пользователем."
+
+msgid "Path Traversal"
+msgstr "Обход пути"
+
+msgid "This attack is known as Path or Directory Traversal."
+msgstr "Эта атака известна как обход пути или каталога."
+
+msgid ""
+"Its aim is the access to files and directories that are stored outside the "
+"web root folder."
+msgstr ""
+"Его цель - доступ к файлам и каталогам, которые хранятся вне корневой папки "
+"Интернета."
+
+msgid "The attacker tries to explore the directories stored in the web server."
+msgstr ""
+"Злоумышленник пытается исследовать каталоги, хранящиеся на веб-сервере."
+
+msgid ""
+"Use indexes rather than actual portions of file names when templating or "
+"using language files (eg: value 5 from the user submission = "
+"Czechoslovakian, rather than expecting the user to return 'Czechoslovakian')."
+msgstr ""
+"Используйте индексы, а не фактические части имен файлов при создании "
+"шаблонов или использовании языковых файлов (например: значение 5 из "
+"представления пользователя = чехословацкий, вместо того, чтобы ожидать, что "
+"пользователь вернет «чехословацкий»)."
+
+msgid ""
+"Ensure the user cannot supply all parts of the path - surround it with your "
+"path code."
+msgstr ""
+"Убедитесь, что пользователь не может указать все части пути - окружите его "
+"своим кодом пути."
+
+msgid ""
+"Validate the user's input by only accepting known good - do not sanitize the "
+"data."
+msgstr ""
+"Подтвердите ввод пользователя, приняв только заведомо исправные - не "
+"дезинфицируйте данные."
+
+msgid ""
+"Use chrooted jails and code access policies to restrict where the files can "
+"be obtained or saved to."
+msgstr ""
+"Используйте chrooted jails и политики доступа к коду, чтобы ограничить, где "
+"файлы могут быть получены или сохранены."
+
+msgid "Fingerprint web technology"
+msgstr "Веб-технология отпечатков пальцев"
+
+msgid ""
+"The use of a web technology can be deducted due to the presence of its "
+"specific fingerprints."
+msgstr ""
+"Использование веб-технологии может быть вычтено из-за наличия определенных "
+"отпечатков пальцев."
+
+msgid "This is only for informational purposes."
+msgstr "Это только в информационных целях."
+
+msgid "Fingerprint web application framework"
+msgstr "Фреймворк веб-приложения отпечатков пальцев"
+
+msgid ""
+"The version of a web application framework can be identified due to the "
+"presence of its specific fingerprints."
+msgstr ""
+"Версию инфраструктуры веб-приложения можно определить по ее специфическим "
+"отпечаткам."
+
+msgid "Fingerprint web server"
+msgstr "Веб-сервер отпечатков пальцев"
+
+msgid ""
+"The version of a web server can be identified due to the presence of its "
+"specific fingerprints."
+msgstr ""
+"Версию веб-сервера можно определить по его специфическим отпечаткам пальцев."
+
+msgid "Htaccess Bypass"
+msgstr "Обход Htaccess"
+
+msgid ""
+"Htaccess files are used to restrict access to some files or HTTP method."
+msgstr ""
+"Файлы Htaccess используются для ограничения доступа к некоторым файлам или "
+"методу HTTP."
+
+msgid ""
+"In some case it may be possible to bypass this restriction and access the "
+"files."
+msgstr ""
+"В некоторых случаях можно обойти это ограничение и получить доступ к файлам."
+
+msgid "Make sure every HTTP method is forbidden if the credentials are bad."
+msgstr "Убедитесь, что все методы HTTP запрещены, если учетные данные неверны."
+
+msgid "HTTP Secure Headers"
+msgstr "Безопасные заголовки HTTP"
+
+msgid ""
+"HTTP security headers tell the browser how to behave when handling the "
+"website's content."
+msgstr ""
+"Заголовки безопасности HTTP сообщают браузеру, как вести себя при обработке "
+"содержимого веб-сайта."
+
+msgid "Use the recommendations for hardening your HTTP Security Headers."
+msgstr "Используйте рекомендации по усилению защиты заголовков HTTP."
+
+msgid "HttpOnly Flag cookie"
+msgstr "HttpOnly Flag cookie"
+
+msgid ""
+"HttpOnly is an additional flag included in a Set-Cookie HTTP response header."
+msgstr ""
+"HttpOnly - это дополнительный флаг, включенный в заголовок HTTP-ответа Set-"
+"Cookie."
+
+msgid ""
+"Using the HttpOnly flag when generating a cookie helps mitigate the risk of "
+"client side script accessing the protected cookie (if the browser supports "
+"it)."
+msgstr ""
+"Использование флага HttpOnly при создании файла cookie помогает снизить риск "
+"доступа сценария на стороне клиента к защищенному файлу cookie (если браузер "
+"поддерживает его)."
+
+msgid ""
+"While creation of the cookie, make sure to set the HttpOnly Flag to True."
+msgstr ""
+"При создании файла cookie убедитесь, что для флага HttpOnly установлено "
+"значение True."
+
+msgid "Internal Server Error"
+msgstr "Внутренняя Ошибка Сервера"
+
+msgid ""
+"An error occurred on the server's side, preventing it to process the request."
+msgstr "Произошла ошибка на стороне сервера, не позволяющая обработать запрос."
+
+msgid "It may be the sign of a vulnerability."
+msgstr "Это может быть признаком уязвимости."
+
+msgid "More information about the error should be found in the server logs."
+msgstr "Более подробную информацию об ошибке следует найти в журналах сервера."
+
+msgid "HTTP Methods"
+msgstr "HTTP-методы"
+
+msgid ""
+"While GET and POST are by far the most common methods that are used to "
+"access information provided by a web server, HTTP allows several other (and "
+"somewhat less known) methods."
+msgstr ""
+"Хотя GET и POST на сегодняшний день являются наиболее распространенными "
+"методами, которые используются для доступа к информации, предоставляемой веб-"
+"сервером, HTTP позволяет использовать несколько других (и несколько менее "
+"известных) методов."
+
+msgid ""
+"Some of these can be used for nefarious purposes if the web server is "
+"misconfigured."
+msgstr ""
+"Некоторые из них могут использоваться в гнусных целях, если веб-сервер "
+"неправильно настроен."
+
+msgid ""
+"Unvalidated redirects and forwards are possible when a web application "
+"accepts untrusted input that could cause the web application to redirect the "
+"request to a URL contained within untrusted input."
+msgstr ""
+"Непроверенные перенаправления и переадресации возможны, когда веб-приложение "
+"принимает ненадежные входные данные, что может привести к тому, что веб-"
+"приложение перенаправит запрос на URL-адрес, содержащийся в ненадежных "
+"входных данных."
+
+msgid ""
+"By modifying untrusted URL input to a malicious site, an attacker may "
+"successfully launch a phishing scam and steal user credentials."
+msgstr ""
+"Изменяя ввод ненадежного URL-адреса вредоносного сайта, злоумышленник может "
+"успешно запустить фишинговое мошенничество и украсть учетные данные "
+"пользователя."
+
+msgid ""
+"Force all redirects to first go through a page notifying users that they are "
+"going off of your site, and have them click a link to confirm."
+msgstr ""
+"Заставьте все перенаправления сначала пройти через страницу, уведомляющую "
+"пользователей о том, что они уходят с вашего сайта, и попросите их щелкнуть "
+"ссылку для подтверждения."
+
+msgid "Resource consumption"
+msgstr "Потребление ресурсов"
+
+msgid "It took an abnormal time to the server to respond to a query."
+msgstr "Серверу потребовалось ненормальное время, чтобы ответить на запрос."
+
+msgid ""
+"An attacker might leverage this kind of weakness to overload the server."
+msgstr ""
+"Злоумышленник может использовать эту уязвимость для перегрузки сервера."
+
+msgid ""
+"The involved script is maybe using the server resources (CPU, memory, "
+"network, file access...) in a non-efficient way."
+msgstr ""
+"Возможно, задействованный сценарий использует ресурсы сервера (ЦП, память, "
+"сеть, доступ к файлам ...) неэффективным способом."
+
+msgid "Secure Flag cookie"
+msgstr "Secure Flag cookie"
+
+msgid ""
+"The secure flag is an option that can be set by the application server when "
+"sending a new cookie to the user within an HTTP Response."
+msgstr ""
+"Флаг безопасности - это параметр, который может быть установлен сервером "
+"приложений при отправке нового файла cookie пользователю в HTTP-ответе."
+
+msgid ""
+"The purpose of the secure flag is to prevent cookies from being observed by "
+"unauthorized parties due to the transmission of a the cookie in clear text."
+msgstr ""
+"Целью флажка безопасности является предотвращение просмотра файлов cookie "
+"неавторизованными сторонами из-за передачи файлов cookie в виде открытого "
+"текста."
+
+msgid "When generating the cookie, make sure to set the Secure Flag to True."
+msgstr ""
+"При создании файла cookie убедитесь, что для параметра Secure Flag "
+"установлено значение True."
+
+msgid "SQLI"
+msgstr "SQLI"
+
+msgid ""
+"SQL injection vulnerabilities allow an attacker to alter the queries "
+"executed on the backend database."
+msgstr ""
+"Уязвимости SQL-инъекций позволяют злоумышленнику изменять запросы, "
+"выполняемые в серверной базе данных."
+
+msgid ""
+"An attacker may then be able to extract or modify information stored in the "
+"database or even escalate his privileges on the system."
+msgstr ""
+"Затем злоумышленник может извлечь или изменить информацию, хранящуюся в базе "
+"данных, или даже повысить свои привилегии в системе."
+
+msgid ""
+"To protect against SQL injection, user input must not directly be embedded "
+"in SQL statements."
+msgstr ""
+"Для защиты от SQL-инъекции вводимые пользователем данные не должны напрямую "
+"встраиваться в операторы SQL."
+
+msgid ""
+"Instead, user input must be escaped or filtered or parameterized statements "
+"must be used."
+msgstr ""
+"Вместо этого пользовательский ввод должен быть экранирован или отфильтрован, "
+"или должны использоваться параметризованные операторы."
+
+msgid "Server Side Request Forgery"
+msgstr "Подделка запросов на стороне сервера"
+
+msgid "SSRF"
+msgstr "SSRF"
+
+msgid ""
+"The target application may have functionality for importing data from a URL, "
+"publishing data to a URL or otherwise reading data from a URL that can be "
+"tampered with."
+msgstr ""
+"Целевое приложение может иметь функции для импорта данных из URL-адреса, "
+"публикации данных в URL-адрес или иного чтения данных из URL-адреса, которые "
+"могут быть изменены."
+
+msgid ""
+"Every URI received by the web application should be checked, especially "
+"scheme and hostname. A whitelist should be used."
+msgstr ""
+"Следует проверить каждый URI, полученный веб-приложением, особенно схему и "
+"имя хоста. Следует использовать белый список."
+
+msgid "Subdomain takeover"
+msgstr "Захват субдомена"
+
+msgid ""
+"A DNS CNAME record points to a non existing domain or to a content that an "
+"attacker can take control of."
+msgstr ""
+"Запись DNS CNAME указывает на несуществующий домен или на контент, который "
+"злоумышленник может получить под свой контроль."
+
+msgid ""
+"Prevent dangling DNS entries by making sure you already have control over "
+"the pointed domain."
+msgstr ""
+"Предотвратите появление висящих записей DNS, убедившись, что у вас уже есть "
+"контроль над указанным доменом."
+
+msgid "Blind SQL Injection"
+msgstr "Слепая SQL инъекция"
+
+msgid "Blind SQLI"
+msgstr "Слепой SQLI"
+
+msgid ""
+"Blind SQL injection is a technique that exploits a vulnerability occurring "
+"in the database of an application."
+msgstr ""
+"Слепая SQL-инъекция - это метод, который использует уязвимость, возникающую "
+"в базе данных приложения."
+
+msgid ""
+"This kind of vulnerability is harder to detect than basic SQL injections "
+"because no error message will be displayed on the webpage."
+msgstr ""
+"Эту уязвимость сложнее обнаружить, чем простую SQL-инъекцию, потому что на "
+"веб-странице не будет отображаться сообщение об ошибке."
+
+msgid "Cross Site Scripting"
+msgstr "Межсайтовый скриптинг"
+
+msgid "XSS"
+msgstr "XSS"
+
+msgid ""
+"Cross-site scripting (XSS) is a type of computer security vulnerability "
+"typically found in web applications which allow code injection by malicious "
+"web users into the web pages viewed by other users."
+msgstr ""
+"Межсайтовый скриптинг (XSS) - это тип уязвимости компьютерной безопасности, "
+"обычно обнаруживаемой в веб-приложениях, которые позволяют злонамеренным веб-"
+"пользователям внедрять код на веб-страницы, просматриваемые другими "
+"пользователями."
+
+msgid "Examples of such code include HTML code and client-side scripts."
+msgstr "Примеры такого кода включают HTML-код и клиентские скрипты."
+
+msgid ""
+"The best way to protect a web application from XSS attacks is ensure that "
+"the application performs validation of all headers, cookies, query strings, "
+"form fields, and hidden fields."
+msgstr ""
+"Лучший способ защитить веб-приложение от XSS-атак - убедиться, что "
+"приложение выполняет проверку всех заголовков, файлов cookie, строк запроса, "
+"полей формы и скрытых полей."
+
+msgid ""
+"Encoding user supplied output in the server side can also defeat XSS "
+"vulnerabilities by preventing inserted scripts from being transmitted to "
+"users in an executable form."
+msgstr ""
+"Кодирование вывода, предоставленного пользователем, на стороне сервера также "
+"может устранить уязвимости XSS, предотвращая передачу вставленных скриптов "
+"пользователям в исполняемой форме."
+
+msgid ""
+"Applications can gain significant protection from javascript based attacks "
+"by converting the following characters in all generated output to the "
+"appropriate HTML entity encoding:"
+msgstr ""
+"Приложения могут получить значительную защиту от атак на основе javascript, "
+"преобразовав следующие символы во всех сгенерированных выводах в "
+"соответствующую кодировку объекта HTML:"
+
+msgid "XML External Entity"
+msgstr "Внешний объект XML"
+
+msgid "XXE"
+msgstr "XXE"
+
+msgid ""
+"An XML External Entity attack is a type of attack against an application "
+"that parses XML input."
+msgstr ""
+"Атака на внешнюю сущность XML - это тип атаки на приложение, которое "
+"анализирует ввод XML."
+
+msgid ""
+"This attack occurs when XML input containing a reference to an external "
+"entity is processed by a weakly configured XML parser."
+msgstr ""
+"Эта атака происходит, когда ввод XML, содержащий ссылку на внешний объект, "
+"обрабатывается слабо настроенным синтаксическим анализатором XML."
+
+msgid ""
+"This attack may lead to the disclosure of confidential data, denial of "
+"service, server side request forgery, port scanning from the perspective of "
+"the machine where the parser is located, and other system impacts."
+msgstr ""
+"Эта атака может привести к раскрытию конфиденциальных данных, отказу в "
+"обслуживании, подделке запросов на стороне сервера, сканированию портов с "
+"точки зрения машины, на которой расположен анализатор, и другим системным "
+"воздействиям."
+
+msgid ""
+"The safest way to prevent XXE is always to disable DTDs (External Entities) "
+"completely."
+msgstr ""
+"Самый безопасный способ предотвратить появление XXE - это всегда полностью "
+"отключать DTD (внешние сущности)."
+
+#, python-brace-format
+msgid "  Evil url: {0}"
+msgstr " Злой URL: {0}"
+
+#, python-brace-format
+msgid "{0} in {1} via injection in the parameter {2}"
+msgstr "{0} в {1} посредством внедрения в параметр {2}"
+
+#, python-brace-format
+msgid "  coming from {0}"
+msgstr " поступает из {0}"
+
+#, python-brace-format
+msgid "{0} in {1} via injection in the query string"
+msgstr "{0} в {1} посредством внедрения в строку запроса"
+
+#, python-brace-format
+msgid "{0} in {1} via injection in the resource path"
+msgstr ""
+
+#, python-brace-format
+msgid "Involved parameter: {0}"
+msgstr "Вовлеченный параметр: {0}"
+
+msgid "Evil request:"
+msgstr "Злой запрос:"
+
+#, python-brace-format
+msgid "Received a HTTP 500 error in {0}"
+msgstr "Получена ошибка HTTP 500 в {0}"
+
+#, python-brace-format
+msgid "Timeout occurred in {0}"
+msgstr "Истекло время ожидания в {0}"
+
+msgid ""
+"The request timed out while attempting to inject a payload in the query "
+"string"
+msgstr ""
+"Истекло время ожидания запроса при попытке ввести полезную нагрузку в строку "
+"запроса"
+
+msgid ""
+"The request timed out while attempting to inject a payload in the resource "
+"path"
+msgstr ""
+"Истекло время ожидания запроса при попытке ввести полезную нагрузку в путь к "
+"ресурсу"
+
+#, python-brace-format
+msgid ""
+"The request timed out while attempting to inject a payload in the parameter "
+"{0}"
+msgstr ""
+"Истекло время ожидания запроса при попытке ввести полезную нагрузку в "
+"параметр {0}"
+
+msgid ""
+"The server responded with a 500 HTTP error code while attempting to inject a "
+"payload in the query string"
+msgstr ""
+"Сервер ответил кодом ошибки HTTP 500 при попытке ввести полезную нагрузку в "
+"строку запроса"
+
+msgid ""
+"The server responded with a 500 HTTP error code while attempting to inject a "
+"payload in the resource path"
+msgstr ""
+"Сервер ответил кодом ошибки HTTP 500 при попытке ввести полезную нагрузку в "
+"путь к ресурсу"
+
+#, python-brace-format
+msgid ""
+"The server responded with a 500 HTTP error code while attempting to inject a "
+"payload in the parameter {0}"
+msgstr ""
+"Сервер ответил кодом ошибки HTTP 500 при попытке ввести полезную нагрузку в "
+"параметр {0}"
+
+#, python-brace-format
+msgid "Invalid argument for option {0} : {1}"
+msgstr "Недействительный аргумент для опции {0}: {1}"
+
+msgid "Use Tor listener (127.0.0.1:9050)"
+msgstr "Используйте прослушиватель Tor (127.0.0.1:9050)"
+
+msgid "Set HTTP authentication credentials"
+msgstr "Установить учетные данные HTTP-аутентификации"
+
+msgid "Set the authentication type to use"
+msgstr "Установите тип аутентификации для использования"
+
+msgid "Set a custom user-agent to use for every requests"
+msgstr ""
+"Установите настраиваемый пользовательский агент, который будет "
+"использоваться для каждого запроса"
+
+msgid "Set a custom header to use for every requests"
+msgstr ""
+"Установите настраиваемый заголовок для использования для каждого запроса"
+
+msgid ""
+"Invalid base URL was specified, please give a complete URL with protocol "
+"scheme and slash after the domain name."
+msgstr ""
+"Указан недопустимый базовый URL-адрес. Укажите полный URL-адрес со схемой "
+"протокола и косой чертой после имени домена."
+
+msgid "Choose the form you want to use or enter 'q' to leave :"
+msgstr ""
+"Выберите форму, которую хотите использовать, или введите \"q\", чтобы выйти:"
+
+msgid "Enter a number : "
+msgstr "Введите номер: "
+
+msgid "Please enter values for the following form: "
+msgstr "Введите значения в следующую форму: "
+
+#, python-brace-format
+msgid "url = {0}"
+msgstr "url = {0}"
+
+msgid "Waiting for running crawler tasks to finish, please wait."
+msgstr "Ожидание завершения выполнения задач краулера, подождите."
+
+msgid ""
+"Waiting for all payload tasks to finish for current resource, please wait."
+msgstr ""
+"Ожидаем завершения всех задач полезной нагрузки для текущего ресурса, "
+"подождите."
+
+msgid "[*] Loading modules:"
+msgstr "[*] Загрузка модулей:"
+
+#, python-brace-format
+msgid "[!] Could not find module {0}"
+msgstr "[!] Не удалось найти модуль {0}"
+
+#, python-brace-format
+msgid "[!] Unable to find a module named {0}"
+msgstr "[!] Невозможно найти модуль с именем {0}"
+
+#, python-brace-format
+msgid "Updating module {0}"
+msgstr "Обновление модуля {0}"
+
+msgid "Update done."
+msgstr "Обновление выполнено."
+
+msgid "[*] Saving scan state, please wait..."
+msgstr "[*] Сохранение состояния сканирования, подождите ..."
+
+msgid " Note"
+msgstr " Примечание"
+
+#, python-brace-format
+msgid "This scan has been saved in the file {0}"
+msgstr "Это сканирование сохранено в файле {0}"
+
+msgid "Max scan time was reached, stopping."
+msgstr "Достигнуто максимальное время сканирования, останавливается."
+
+#, python-brace-format
+msgid "[!] Missing dependencies for module {0}:"
+msgstr "[!] Отсутствуют зависимости для модуля {0}:"
+
+#, python-brace-format
+msgid "[*] Launching module {0}"
+msgstr "[*] Модуль запуска {0}"
+
+#, python-brace-format
+msgid "[*] {0} pages were previously attacked and will be skipped"
+msgstr "[*] {0} страницы ранее подвергались атаке и будут пропущены"
+
+msgid "Attack process was interrupted. Do you want to:"
+msgstr "Процесс атаки был прерван. Ты хочешь:"
+
+msgid "\tr) stop everything here and generate the (R)eport"
+msgstr "\tr) остановите все здесь и сгенерируйте (R) eport"
+
+msgid "\tn) move to the (N)ext attack module (if any)"
+msgstr "\tn) перейти в (N) модуль атаки ext (если есть)"
+
+msgid "\tq) (Q)uit without generating the report"
+msgstr "\tq) (Q) uit без формирования отчета"
+
+msgid "\tc) (C)ontinue the current attack"
+msgstr "\tc) (C) продолжить текущую атаку"
+
+msgid "Invalid choice. Valid choices are r, n, q and c."
+msgstr "Неверный выбор. Допустимые варианты: r, n, q и c."
+
+#, python-brace-format
+msgid "Max attack time was reached for module {0}, stopping."
+msgstr "Достигнуто максимальное время атаки для модуля {0}, останавливается."
+
+msgid "Sending crash report {} ... {}"
+msgstr "Отправка отчета о сбое {} ... {}"
+
+msgid "Error sending crash report"
+msgstr "Ошибка отправки отчета о сбое"
+
+msgid "{} requests were skipped due to network issues"
+msgstr "{} запросов было пропущено из-за проблем с сетью"
+
+msgid "Report"
+msgstr "Отчет"
+
+#, python-brace-format
+msgid "A report has been generated in the file {0}"
+msgstr "Отчет был создан в файле {0}"
+
+#, python-brace-format
+msgid "Open {0} with a browser to see this report."
+msgstr "Откройте {0} в браузере, чтобы просмотреть этот отчет."
+
+msgid "Error: {} must not contain params, query or fragment!"
+msgstr "Ошибка: {} не должно содержать параметров, запроса или фрагмента!"
+
+msgid "Error: {} must contain scheme and host"
+msgstr "Ошибка: {} должен содержать схему и хост"
+
+msgid "[*] You are lucky! Full moon tonight."
+msgstr "[*] Тебе везет! Полнолуние сегодня вечером."
+
+msgid "[*] Be careful! New moon tonight."
+msgstr "[*] Будь осторожен! Новолуние сегодня вечером."
+
+msgid "[*] Watch out! Bad things can happen on Friday the 13th."
+msgstr "[*] Осторожно! В пятницу 13-го могут случиться неприятности."
+
+msgid "[*] Today is International Beer Day!"
+msgstr "[*] Сегодня Международный день пива!"
+
+msgid "[*] May the force be with you!"
+msgstr "[*] Да прибудет с тобой сила!"
+
+msgid "[*] Happy new year!"
+msgstr "[*] С Новым Годом!"
+
+msgid "[*] Merry christmas!"
+msgstr "[*] Счастливого Рождества!"
+
+msgid "[*] Today is world backup day! Is your data safe?"
+msgstr ""
+"[*] Сегодня всемирный день резервного копирования! Ваши данные в "
+"безопасности?"
+
+msgid "The base URL used to define the scan scope (default scope is folder)"
+msgstr ""
+"Базовый URL-адрес, используемый для определения области сканирования "
+"(область по умолчанию - папка)"
+
+msgid "Set scan scope"
+msgstr "Установить область сканирования"
+
+msgid "List of modules to load"
+msgstr "Список модулей для загрузки"
+
+msgid "List Wapiti attack modules and exit"
+msgstr "Вывести список модулей атаки Wapiti и выйти"
+
+msgid "Update Wapiti attack modules and exit"
+msgstr "Обновите модули атаки Wapiti и выйдите"
+
+msgid "Set attack level"
+msgstr "Установить уровень атаки"
+
+msgid "Set the HTTP(S) proxy to use. Supported: http(s) and socks proxies"
+msgstr ""
+"Настройте прокси-сервер HTTP (S) для использования. Поддерживаются: http (s) "
+"и socks прокси"
+
+msgid "Set a JSON cookie file to use."
+msgstr "Установите файл cookie JSON для использования."
+
+msgid ""
+"You can also pass 'firefox' or 'chrome' to load cookies from your browser."
+msgstr ""
+"Вы также можете передать «firefox» или «chrome», чтобы загружать файлы "
+"cookie из вашего браузера."
+
+msgid "Ignore Set-Cookie header from HTTP responses"
+msgstr "Игнорировать заголовок Set-Cookie из HTTP-ответов"
+
+msgid ""
+"Don't resume the scanning process, attack URLs scanned during a previous "
+"session"
+msgstr ""
+"Не возобновлять процесс сканирования, атаковать URL-адреса, просканированные "
+"во время предыдущего сеанса"
+
+msgid ""
+"Resume the scanning process (if stopped) even if some attacks were "
+"previously performed"
+msgstr ""
+"Возобновить процесс сканирования (если он остановлен), даже если некоторые "
+"атаки были выполнены ранее"
+
+msgid "Flush attack history and vulnerabilities for the current session"
+msgstr "Очистить историю атак и уязвимостей для текущего сеанса"
+
+msgid ""
+"Flush everything that was previously found for this target (crawled URLs, "
+"vulns, etc)"
+msgstr ""
+"Удалите все, что было ранее найдено для этой цели (просканированные URL, "
+"уязвимости и т. Д.)"
+
+msgid "Directory where to store attack history and session data."
+msgstr "Каталог, в котором хранится история атак и данные сеанса."
+
+msgid "Directory where to store configuration databases."
+msgstr "Каталог, в котором хранятся базы данных конфигурации."
+
+msgid "Adds an url to start scan with"
+msgstr "Добавляет URL-адрес для начала сканирования"
+
+msgid "Adds an url to exclude from the scan"
+msgstr "Добавляет URL-адрес для исключения из сканирования"
+
+msgid "Remove this parameter from urls"
+msgstr "Удалить этот параметр из URL"
+
+msgid "Skip attacking given parameter(s)"
+msgstr "Пропустить атаку по заданному параметру (ам)"
+
+msgid "Set how deep the scanner should explore the website"
+msgstr "Установите, насколько глубоко сканер должен исследовать веб-сайт"
+
+msgid "Set how many (in-scope) links the scanner should extract for each page"
+msgstr ""
+"Установите, сколько ссылок (в пределах области действия) сканер должен "
+"извлечь для каждой страницы"
+
+msgid "Set how many pages the scanner should explore per directory"
+msgstr ""
+"Установите, сколько страниц сканер должен исследовать для каждого каталога"
+
+msgid "Set how many seconds you want the scan to last (floats accepted)"
+msgstr ""
+"Установите, сколько секунд вы хотите, чтобы сканирование длилось "
+"(принимаются числа с плавающей запятой)"
+
+msgid ""
+"Set how many seconds you want each attack module to last (floats accepted)"
+msgstr ""
+"Установите, сколько секунд вы хотите, чтобы каждый модуль атаки длился "
+"(принимаются поплавки)"
+
+msgid ""
+"URLs and forms having more than MAX input parameters will be erased before "
+"attack."
+msgstr ""
+"URL-адреса и формы, содержащие более MAX входных параметров, будут удалены "
+"перед атакой."
+
+msgid ""
+"Easy way to reduce the number of scanned and attacked URLs.\n"
+"Possible values: paranoid, sneaky, polite, normal, aggressive, insane"
+msgstr ""
+"Простой способ уменьшить количество просканированных и атакованных URL-"
+"адресов.\n"
+"Возможные значения: параноик, подлый, вежливый, нормальный, агрессивный, "
+"безумный"
+
+msgid ""
+"Number of concurrent tasks to use for the exploration (crawling) of the "
+"target."
+msgstr ""
+"Количество одновременных задач, используемых для исследования (обхода) цели."
+
+msgid "Set timeout for requests"
+msgstr "Установить тайм-аут для запросов"
+
+msgid "Set SSL check (default is no check)"
+msgstr "Установить проверку SSL (по умолчанию проверка отсутствует)"
+
+msgid "Colorize output"
+msgstr "Раскрасить вывод"
+
+msgid "Set verbosity level (0: quiet, 1: normal, 2: verbose)"
+msgstr "Установить уровень детализации (0: тихо, 1: нормально, 2: подробно)"
+
+msgid "Set output format. Supported:"
+msgstr "Установите выходной формат. Поддерживается:"
+
+msgid "Default is html."
+msgstr "По умолчанию - html."
+
+msgid "Output file or folder"
+msgstr "Выходной файл или папка"
+
+msgid "Output log file"
+msgstr "Выходной файл журнала"
+
+msgid "Url serving as endpoint for target"
+msgstr "URL-адрес, служащий конечной точкой для цели"
+
+msgid "Url serving as endpoint for attacker"
+msgstr "URL-адрес, служащий конечной точкой для злоумышленника"
+
+msgid "Url serving as endpoint for both attacker and target"
+msgstr ""
+"URL-адрес, служащий конечной точкой как для злоумышленника, так и для цели"
+
+msgid "Don't send automatic bug report when an attack module fails"
+msgstr ""
+"Не отправлять автоматический отчет об ошибке при выходе из строя модуля атаки"
+
+msgid "Show program's version number and exit"
+msgstr "Показать номер версии программы и выйти"
+
+msgid "Number of concurrent tasks must be 1 or above!"
+msgstr "Количество одновременных задач должно быть не менее 1!"
+
+msgid "[*] Do you feel lucky punk?"
+msgstr "[*] Тебе повезло, панк?"
+
+msgid "[*] Available modules:"
+msgstr "[*] Доступные модули:"
+
+msgid ""
+"Invalid base URL was specified, please give a complete URL with protocol "
+"scheme."
+msgstr ""
+"Указан недопустимый базовый URL-адрес. Укажите полный URL-адрес со схемой "
+"протокола."
+
+msgid "[*] Updating modules"
+msgstr "[*] Обновление модулей"
+
+msgid "Error: File given with the -s option must be UTF-8 encoded !"
+msgstr ""
+"Ошибка: файл, указанный с параметром -s, должен быть в кодировке UTF-8!"
+
+msgid "Error: Internal endpoint URL must be accessible from Wapiti!"
+msgstr ""
+"Ошибка: внутренний URL-адрес конечной точки должен быть доступен из Wapiti!"
+
+msgid "[*] Resuming scan from previous session, please wait"
+msgstr "[*] Возобновление сканирования с предыдущего сеанса, подождите"
+
+#, python-brace-format
+msgid "[*] {0} URLs and forms having more than {1} parameters were removed."
+msgstr ""
+"[*] {0} URL-адреса и формы, содержащие более {1} параметров, были удалены."
+
+#, python-brace-format
+msgid "[*] Wapiti found {0} URLs and forms during the scan"
+msgstr "[*] Wapiti обнаружила {0} URL и формы во время сканирования"
+
+msgid ""
+"[!] Can't store information in persister. SQLite database must have been "
+"locked by another process"
+msgstr ""
+"[!] Не могу сохранить информацию в персистере. База данных SQLite должна "
+"быть заблокирована другим процессом"
+
+msgid "[!] You should unlock and launch Wapiti again."
+msgstr "[!] Вам следует разблокировать и снова запустить Wapiti."
+
+msgid "Login failed"
+msgstr "Авторизация не удалась"
+
+msgid "Invalid credentials format"
+msgstr "Неверный формат учетных данных"
+
+msgid "Login success"
+msgstr "Успешный вход в систему"
+
+msgid "Credentials might be invalid"
+msgstr "Учетные данные могут быть недействительными"
+
+msgid "No login form detected"
+msgstr "Форма входа не обнаружена"
+
+msgid "[!] Connection error with URL"
+msgstr "[!] Ошибка подключения с URL"
+
+msgid "[!] {} with url {}"
+msgstr "[!] {} с URL {}"
+
+#, python-brace-format
+msgid "Report for {0}\n"
+msgstr "Отчет за {0}\n"
+
+#, python-brace-format
+msgid "Date of the scan : {0}\n"
+msgstr "Дата сканирования: {0}\n"
+
+#, python-brace-format
+msgid "Scope of the scan : {0}\n"
+msgstr "Объем сканирования: {0}\n"
+
+msgid "Summary of vulnerabilities :"
+msgstr "Сводка уязвимостей:"
+
+#, python-brace-format
+msgid "{0} : {1:>3}\n"
+msgstr "{0} : {1:>3}\n"
+
+msgid "Evil request:\n"
+msgstr "Злая просьба:\n"
+
+#, python-brace-format
+msgid "cURL command PoC : \"{0}\""
+msgstr "cURL комманда PoC : \"{0}\""
+
+msgid "Summary of anomalies :"
+msgstr "Резюме аномалий:"
+
+msgid "Summary of additionals :"
+msgstr "Сводка дополнений:"
