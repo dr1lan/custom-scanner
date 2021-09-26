@@ -35,9 +35,6 @@ doc_and_conf_files = [
     (
         DOC_DIR,
         [
-            "doc/AUTHORS",
-            "doc/ChangeLog_Wapiti",
-            "doc/ChangeLog_lswww",
             "doc/endpoints.md",
             "doc/example.txt",
             "doc/FAQ.md",
@@ -46,7 +43,6 @@ doc_and_conf_files = [
             "doc/wapiti-getcookie.1.html",
             "doc/wapiti-getcookie.ronn",
             "doc/xxe_module.md",
-            "LICENSE",
             "INSTALL.md",
             "README.rst",
             "VERSION"
