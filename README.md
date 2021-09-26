@@ -8,3 +8,5 @@
 - httpx-socks[asyncio]; beautifulsoup4; tld; yaswfp; mako; pysocks; markupsafe; six; importlib_metadata; browser-cookie; cryptography;
 - httpx[brotli]; sqlalchemy; aiocache; aiosqlite; loguru; dnspython; pytest-runner; pytest; respx; pytest-cov; pytest-asynio
 - apt install gettext
+- pip3 install ujson
+- pip3 install msgpack
