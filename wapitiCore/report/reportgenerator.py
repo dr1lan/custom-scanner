@@ -23,9 +23,12 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 import time
+import locale
 
 
 class ReportGenerator:
+    locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8')
+
     def __init__(self):
         self._infos = {}
         self._date = None
@@ -33,7 +36,7 @@ class ReportGenerator:
     def set_report_info(self, target, scope, date, version):
         """Set the informations about the scan"""
         self._infos["target"] = target
-        self._infos["date"] = time.strftime("%a, %d %b %Y %H:%M:%S +0000", date)
+        self._infos["date"] = time.strftime("%d %B %Y %H:%M", date)
         self._infos["version"] = version
         self._infos["scope"] = scope
         self._date = date

@@ -1,4 +1,4 @@
-from time import gmtime
+from time import gmtime, localtime
 import tempfile
 
 from wapitiCore.report import GENERATORS
@@ -14,7 +14,7 @@ def test_reports():
         report_gen.set_report_info(
             "http://perdu.com",
             "folder",
-            gmtime(),
+            localtime(),
             "WAPITI_VERSION"
         )
 

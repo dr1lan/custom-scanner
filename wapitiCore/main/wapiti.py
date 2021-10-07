@@ -20,7 +20,7 @@ import sys
 import argparse
 import os
 from urllib.parse import urlparse
-from time import strftime, gmtime
+from time import strftime, gmtime, localtime
 from importlib import import_module
 from operator import attrgetter
 from traceback import print_tb
@@ -171,7 +171,7 @@ class Wapiti:
         self.report_gen.set_report_info(
             self.target_url,
             self.target_scope,
-            gmtime(),
+            localtime(),
             WAPITI_VERSION
         )
 
