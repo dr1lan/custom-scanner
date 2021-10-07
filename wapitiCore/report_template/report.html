@@ -91,10 +91,10 @@
             <p>${vulnerability["info"] | h}</p>
         </section>
         <section id="tab-vuln-${i}-${j}-2" style="min-height: 124px;" class="is-hidden report-section">
-            <pre>${vulnerability["http_request"] | h}</pre>
+            <p>${vulnerability["http_request"] | h}</p>
         </section>
         <section id="tab-vuln-${i}-${j}-3" style="min-height: 124px;" class="is-hidden report-section">
-            <pre>${vulnerability["curl_command"] | h}</pre>
+            <p>${vulnerability["curl_command"] | h}</p>
         </section>
         % endfor
 
