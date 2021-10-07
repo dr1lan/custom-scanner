@@ -10,7 +10,9 @@
 <body>
 <div id="page">
     <div style="text-align: center">
-        <h2 id="report_title" class="title" style="text-align: center">Отчет об уязвимостях</h2>
+        <h2 id="report_title" class="title" style="text-align: center">
+            <span>Отчет об уязвимостях</span>
+        </h2>
         <h3>Цель: ${target}</h3>
         <p style="text-align: center;">Дата сканирования: ${scan_date}.</p> <br>
         <p>Область сканирования: ${scan_scope}</p>
@@ -86,7 +88,7 @@
             </div>
         </div>
         <section id="tab-vuln-${i}-${j}-1" style="min-height: 124px;" class="report-section">
-            <pre>${vulnerability["info"] | h}</pre>
+            <p>${vulnerability["info"] | h}</p>
         </section>
         <section id="tab-vuln-${i}-${j}-2" style="min-height: 124px;" class="is-hidden report-section">
             <pre>${vulnerability["http_request"] | h}</pre>
@@ -103,7 +105,7 @@
         <h5>Справочная информация</h5>
         <ul id="reference">
             % for ref_name, ref_url in flaws[vuln_name]["ref"].items():
-            <li><a href="${ref_url}">${ref_name | h}</a></li>
+            <li style="list-style-type: none;"><a href="${ref_url}">${ref_name | h}</a></li>
             % endfor
         </ul>
         <br/>
