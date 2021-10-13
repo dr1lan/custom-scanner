@@ -76,25 +76,21 @@
         % for j, vulnerability in enumerate(vulnerabilities[vuln_name]):
         <h4 class="h3-yellow-small grey-figure wow fadeIn" style="margin-top: 40px;">Уязвимости найдены в
             ${vulnerability["path"] | h}</h4>
-        <div class="is-navbar-container">
-            <div class="is-navbar">
-                <nav class="is-center" id="report_tabs" data-kube="tabs" data-equal="true" data-height="equal">
-                    <ul style="min-height: 100px;">
-                        <li><a href="#tab-vuln-${i}-${j}-1" class="is-active">Описание</a></li>
-                        <li><a href="#tab-vuln-${i}-${j}-2">HTTP запрос</a></li>
-                        <li><a href="#tab-vuln-${i}-${j}-3">cURL команда</a></li>
-                    </ul>
-                </nav>
+        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+            <div style="margin-left: auto; margin-right: auto;">
+                <a href="#tab-vuln-${i}-${j}-1" class="is-active">Описание</a>
+                <a href="#tab-vuln-${i}-${j}-2">HTTP запрос</a>
+                <a href="#tab-vuln-${i}-${j}-3">cURL команда</a>
             </div>
-        </div>
-        <section id="tab-vuln-${i}-${j}-1" style="min-height: 124px;" class="report-section">
-            <p>${vulnerability["info"] | h}</p>
+        </nav>
+        <section id="tab-vuln-${i}-${j}-1" style="min-height: 124px;">
+            <pre>${vulnerability["info"] | h}</pre>
         </section>
-        <section id="tab-vuln-${i}-${j}-2" style="min-height: 124px;" class="is-hidden report-section">
-            <p>${vulnerability["http_request"] | h}</p>
+        <section id="tab-vuln-${i}-${j}-2" style="min-height: 124px;" class="is-hidden">
+            <pre>${vulnerability["http_request"] | h}</pre>
         </section>
-        <section id="tab-vuln-${i}-${j}-3" style="min-height: 124px;" class="is-hidden report-section">
-            <p>${vulnerability["curl_command"] | h}</p>
+        <section id="tab-vuln-${i}-${j}-3" style="min-height: 124px;" class="is-hidden">
+            <pre>${vulnerability["curl_command"] | h}</pre>
         </section>
         % endfor
 
