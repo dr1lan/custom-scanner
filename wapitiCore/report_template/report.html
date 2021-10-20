@@ -17,6 +17,7 @@
         <p style="text-align: center; margin: auto; padding-top: 25px;">Дата сканирования: ${scan_date}.</p> <br>
         <p style="margin: auto;">Область сканирования: ${scan_scope}</p>
     </div>
+    <br><a id="pdf_link" href="/pdf?domain=${target}">Сохранить в PDF</a>
     <h4 id="report_info">Итоговая информация</h4>
     <table class="width-100 hovered" id="report_table">
         <thead>
@@ -35,7 +36,7 @@
                 ${vuln_name}
                 % endif
             </td>
-            <td class="small .text-centered">${len(vulnerabilities[vuln_name])}</td>
+            <td class="small text-centered">${len(vulnerabilities[vuln_name])}</td>
         </tr>
         % endfor
         % for i, anomaly_name in enumerate(anomalies):
@@ -47,7 +48,7 @@
                 ${anomaly_name}
                 % endif
             </td>
-            <td class="small .text-centered">${len(anomalies[anomaly_name])}</td>
+            <td class="small text-centered">${len(anomalies[anomaly_name])}</td>
         </tr>
         % endfor
         % for i, additional_name in enumerate(additionals):
@@ -59,7 +60,7 @@
                 ${additional_name}
                 % endif
             </td>
-            <td class="small .text-centered">${len(additionals[additional_name])}</td>
+            <td class="small text-centered">${len(additionals[additional_name])}</td>
         </tr>
         % endfor
         </tbody>
@@ -68,13 +69,13 @@
         % for i, vuln_name in enumerate(vulnerabilities):
         % if len(vulnerabilities[vuln_name]):
         <h3 id="vuln_type_${i}" class="report_h3">${vuln_name}</h3>
-        <dl>
-            <dt class="h3-yellow-small grey-figure wow fadeIn">Описание</dt>
-            <dd>${flaws[vuln_name]["desc"] | h}</dd>
-        </dl>
+        <div>
+            <h4 class="h3-yellow-small">Описание</h4>
+            <div>${flaws[vuln_name]["desc"] | h}</div>
+        </div>
 
         % for j, vulnerability in enumerate(vulnerabilities[vuln_name]):
-        <h4 class="h3-yellow-small grey-figure wow fadeIn" style="margin-top: 40px;">Уязвимости найдены в
+        <h4 class="h3-yellow-small" style="margin-top: 40px;">Уязвимости найдены в
             ${vulnerability["path"] | h}</h4>
         <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
             <div style="margin-left: auto; margin-right: auto;">
@@ -92,14 +93,34 @@
         <section id="tab-vuln-${i}-${j}-3" style="min-height: 124px;" class="is-hidden">
             <pre>${vulnerability["curl_command"] | h}</pre>
         </section>
+        <table style="display: none;" class="table_report">
+            <tbody>
+            <tr>
+                <td>Описание</td>
+                <td>${vulnerability["info"] | h}</td>
+            </tr>
+            <tr>
+                <td>HTTP запрос</td>
+                <td>
+                    <pre>${vulnerability["http_request"] | h}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>cURL команда</td>
+                <td>
+                    <pre>${vulnerability["curl_command"] | h}</pre>
+                </td>
+            </tr>
+            </tbody>
+        </table>
         % endfor
 
-        <dl style="margin-top: 50px;">
-            <dt class="h3-yellow-small grey-figure wow fadeIn">Решение</dt>
-            <dd>${flaws[vuln_name]["sol"]}</dd>
-        </dl>
+        <div style="margin-top: 50px;">
+            <h4 class="h3-yellow-small">Решение</h4>
+            <div>${flaws[vuln_name]["sol"]}</div>
+        </div>
         <h5>Справочная информация</h5>
-        <ul id="reference">
+        <ul class="reference">
             % for ref_name, ref_url in flaws[vuln_name]["ref"].items():
             <li style="list-style-type: none;"><a href="${ref_url}">${ref_name | h}</a></li>
             % endfor
@@ -117,11 +138,13 @@
         </dl>
 
         % for j, anomaly in enumerate(anomalies[anomaly_name]):
-        <h4>Аномалии найдены ${anomaly["path"] | h}</h4>
+        <h4 class="h3-yellow-small" style="margin-top: 40px;">Аномалии найдены ${anomaly["path"] | h}</h4>
         <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
-            <a href="#tab-anom-${i}-${j}-1" class="is-active">Описание</a>
-            <a href="#tab-anom-${i}-${j}-2">HTTP запрос</a>
-            <a href="#tab-anom-${i}-${j}-3">cURL команда</a>
+            <div style="margin-left: auto; margin-right: auto;">
+                <a href="#tab-anom-${i}-${j}-1" class="is-active">Описание</a>
+                <a href="#tab-anom-${i}-${j}-2">HTTP запрос</a>
+                <a href="#tab-anom-${i}-${j}-3">cURL команда</a>
+            </div>
         </nav>
         <section id="tab-anom-${i}-${j}-1" style="min-height: 124px;">
             <pre>${anomaly["info"] | h}</pre>
@@ -132,16 +155,36 @@
         <section id="tab-anom-${i}-${j}-3" style="min-height: 124px;" class="is-hidden">
             <pre>${anomaly["curl_command"] | h}</pre>
         </section>
+        <table style="display: none;" class="table_report">
+            <tbody>
+            <tr>
+                <td>Описание</td>
+                <td>${anomaly["info"] | h}</td>
+            </tr>
+            <tr>
+                <td>HTTP запрос</td>
+                <td>
+                    <pre>${anomaly["http_request"] | h}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>cURL команда</td>
+                <td>
+                    <pre>${anomaly["curl_command"] | h}</pre>
+                </td>
+            </tr>
+            </tbody>
+        </table>
         % endfor
 
-        <dl>
-            <dt>Решение</dt>
-            <dd>${flaws[anomaly_name]["sol"]}</dd>
-        </dl>
+        <div style="margin-top: 50px;">
+            <h4 class="h3-yellow-small">Решение</h4>
+            <div>${flaws[anomaly_name]["sol"]}</div>
+        </div>
         <h5>Справочная информация</h5>
-        <ul>
+        <ul class="reference">
             % for ref_name, ref_url in flaws[anomaly_name]["ref"].items():
-            <li><a href="${ref_url}">${ref_name | h}</a></li>
+            <li style="list-style-type: none;"><a href="${ref_url}">${ref_name | h}</a></li>
             % endfor
         </ul>
         <br/>
@@ -150,18 +193,20 @@
         % endfor
         % for i, additional_name in enumerate(additionals):
         % if len(additionals[additional_name]):
-        <h3 id="addition_type_${i}">${additional_name}</h3>
-        <dl>
-            <dt>Описание</dt>
-            <dd>${flaws[additional_name]["desc"] | h}</dd>
-        </dl>
+        <h3 id="addition_type_${i}" class="report_h3">${additional_name}</h3>
+        <div>
+            <h4 class="h3-yellow-small">Описание</h4>
+            <div>${flaws[additional_name]["desc"] | h}</div>
+        </div>
 
         % for j, additional in enumerate(additionals[additional_name]):
-        <h4>Дополнительно найдено в ${additional["path"] | h}</h4>
+        <h4 class="h3-yellow-small" style="margin-top: 40px;">Дополнительно найдено в ${additional["path"] | h}</h4>
         <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
-            <a href="#tab-addition-${i}-${j}-1" class="is-active">Описание</a>
-            <a href="#tab-addition-${i}-${j}-2">HTTP запрос</a>
-            <a href="#tab-addition-${i}-${j}-3">cURL команда</a>
+            <div style="margin-left: auto; margin-right: auto;">
+                <a href="#tab-addition-${i}-${j}-1" class="is-active">Описание</a>
+                <a href="#tab-addition-${i}-${j}-2">HTTP запрос</a>
+                <a href="#tab-addition-${i}-${j}-3">cURL команда</a>
+            </div>
         </nav>
         <section id="tab-addition-${i}-${j}-1" style="min-height: 124px;">
             <pre>${additional["info"] | h}</pre>
@@ -172,15 +217,35 @@
         <section id="tab-addition-${i}-${j}-3" style="min-height: 124px;" class="is-hidden">
             <pre>${additional["curl_command"] | h}</pre>
         </section>
+        <table style="display: none;" class="table_report">
+            <tbody>
+            <tr>
+                <td>Описание</td>
+                <td>${additional["info"] | h}</td>
+            </tr>
+            <tr>
+                <td>HTTP запрос</td>
+                <td>
+                    <pre>${additional["http_request"] | h}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>cURL команда</td>
+                <td>
+                    <pre>${additional["curl_command"] | h}</pre>
+                </td>
+            </tr>
+            </tbody>
+        </table>
         % endfor
-        <dl>
-            <dt>Решение</dt>
-            <dd>${flaws[additional_name]["sol"]}</dd>
-        </dl>
+        <div style="margin-top: 50px;">
+            <h4 class="h3-yellow-small">Решение</h4>
+            <div>${flaws[additional_name]["sol"]}</div>
+        </div>
         <h5>Справочная информация</h5>
-        <ul>
+        <ul class="reference">
             % for ref_name, ref_url in flaws[additional_name]["ref"].items():
-            <li><a href="${ref_url}">${ref_name | h}</a></li>
+            <li style="list-style-type: none;"><a href="${ref_url}">${ref_name | h}</a></li>
             % endfor
         </ul>
         <br/>
