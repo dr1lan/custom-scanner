@@ -27,7 +27,7 @@ import locale
 import gettext
 import sys
 
-AVAILABLE_LANGS = ["en", "es", "fr", "pt", "zh", "ru"]  # "de", "ms"]
+AVAILABLE_LANGS = ["ru"]  # "de", "ms"]
 
 if sys.platform == "win32":
     import ctypes
@@ -40,7 +40,7 @@ else:
     def_locale = locale.getdefaultlocale()  # for example ('fr_FR', 'cp1252')
     lang_country = def_locale[0]
 
-lang = None
+lang = "ru"
 if isinstance(lang_country, str) and len(lang_country) >= 2:
     lang = lang_country[:2]  # fr
 
@@ -54,7 +54,7 @@ elif lang not in AVAILABLE_LANGS:
     print("Oops! No translations found for your language... Using english.")
     print("Please send your translations for improvements.")
     print("===============================================================")
-    lang = "en"
+    lang = "ru"
 
 BASE_DIR = os.path.dirname(sys.modules["wapitiCore"].__file__)
 LANG_PATH = os.path.join(BASE_DIR, "data", "language")
@@ -62,7 +62,7 @@ LANG_PATH = os.path.join(BASE_DIR, "data", "language")
 lan = gettext.translation(
     "wapiti",
     LANG_PATH,
-    languages=[lang, "en"],
+    languages=[lang, "ru"],
     codeset="UTF-8"
 )
 _ = lan.gettext
